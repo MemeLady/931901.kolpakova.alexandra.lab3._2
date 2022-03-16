@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Result";
+    int num = 1;
+}
+
+<div class="container-fluid">
+    <h1>Result</h1>
+    <h3> Right answers @ViewBag.RightAnswersCount out @ViewBag.AnswersCount</h3>
+
+    @foreach (string result in ViewBag.Results)
+    {
+        <p>@(num++). @result</p>
+    }
+</div>
